@@ -1,4 +1,11 @@
 let char = new Knight('Jailson');
-let monster = new LittleMoster();
+let monster = new BigMonster();
 
-console.log(monster.name);
+const stage = new Stage(
+  char,
+  monster,
+  document.querySelector('#char'),
+  document.querySelector('#monster')
+);
+
+stage.start();
